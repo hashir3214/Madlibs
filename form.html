@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mad Libs Game</title>
+    <style>
+        body { background: #f0f0f0; font-family: Arial, sans-serif; }
+        .container { max-width: 500px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px #ccc; }
+        h2 { text-align: center; }
+        label { display: block; margin-top: 15px; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 20px; width: 100%; padding: 10px; background: #007bff; color: #fff; border: none; border-radius: 4px; }
+        button:hover { background: #0056b3; cursor: pointer; }
+        @media (max-width: 600px) {
+            .container { padding: 20px; margin: 20px; }
+        }
+        a
+        { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; } 
+        footer { text-align: center; margin-top: 40px; color: #888; }
+        @media (max-width: 600px) {
+            .container { padding: 20px; margin: 20px; }
+            h1 { font-size: 2em; }
+        }
+        base { font-size: 16px; }
+        body { line-height: 1.6; }
+        .container { max-width: 700px; margin: 40px auto; background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 2px 12px #ccc; }
+h1 { text-align: center; font-size: 2.5em; margin-bottom: 10px; }
+
+        h2 { margin-top: 40px; color: #007bff; }
+        .skills { margin-top: 20px; }
+        .skills ul { list-style: none; padding: 0; }
+        .skills li { background: #e7f3ff; margin: 8px 0; padding: 10px 15px; border-radius: 5px; font-size: 1.1em; }
+        .about { margin-top: 30px; font-size: 1.2em; }
+        footer { text-align: center; margin-top: 40px; color: #888; }
+        a { color: #007bff; text-decoration: none; }
+        body { font-family: Arial, sans-serif; margin: 0; }
+                .container { max-width: 700px; margin: 40px auto; background : #fff; padding: 40px; border-radius: 10px; box-shadow: 0 2px 12px #ccc; }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Mad Libs Game</h2>
+        <form method="post">
+            <label for="story">Choose a story:</label>
+            <select name="story" id="story" required>
+                <option value="1">Story 1</option>
+                <option value="2">Story 2</option>
+                <option value="3">Story 3</option>
+            </select>
+            <label for="adjective">Adjective:</label>
+            <input type="text" name="adjective" id="adjective" required>
+            <label for="noun">Noun:</label>
+            <input type="text" name="noun" id="noun" required>
+            <label for="verb">Verb:</label>
+            <input type="text" name="verb" id="verb" required>
+            <label for="place">Place:</label>
+            <input type="text" name="place" id="place" required>
+            <button type="submit">Create Story</button>
+        </form>
+    </div>
+</body>
+</html>
